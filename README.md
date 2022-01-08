@@ -28,4 +28,4 @@ The app is currently in the testing phase, You can access the app : <a href="htt
 <!--[YOUR APP LINK HERE](either Github link or Google Play store link of published app or .apk file)-->
 Warning : When you installed the the apk you have to enter the workers data manually, since app is still in testing mode.
 
-We are planning to make it available in workers native language also for better understanding. We aim that a every needy who needs services on urgent and have no way to found a worker would be helped with our application. We are also planning on addings reviews in our app regarding workers. 
+We are planning to make our application available in workers native language for better understanding. We aim that every person who want to search for job or to to search for worker to hire needs would be helped with our application. We are also planning on addings reviews in our app regarding workers. We are also going to add some features like Worker of Week, Worker of Month, Worker of Year.  
