@@ -12,7 +12,6 @@ This project “Worker’s Application” focuses on hiring process of the Worke
 
 <b> Images Of System: </b>
 ![Image Of System](Images/App%20Images.png) 
-<!--<img width="559" alt="sampleimages" src="https://user-images.githubusercontent.com/18289261/142846646-a6858641-ad88-43aa-b8bb-b690fd7126f1.png">-->
     	  	
 <b> Functionality & Concepts used : </b>
 
@@ -25,7 +24,7 @@ This project “Worker’s Application” focuses on hiring process of the Worke
 
 <b> Application Link & Future Scope : </b>
 
-The app is currently in the testing phase, You can access the app : <a href="https://github.com/Deep-De-coder/Android_Study_Jams-Worker_Application/blob/main/WorkersApplication-main/app/app-debug.apk?raw=true" download="Woker Application.apk">Woker Application.apk</a> (Clcik on raw or Download after clicking on this)
+The app is currently in the testing phase, You can access the app : <a href="https://github.com/Deep-De-coder/Android_Study_Jams-Worker_Application/blob/main/WorkersApplication-main/app/app-debug.apk?raw=true" download="Woker Application.apk">Woker Application.apk</a> 
 <!--[YOUR APP LINK HERE](either Github link or Google Play store link of published app or .apk file)-->
 Warning : When you installed the the apk you have to enter the workers data manually, since app is still in testing mode.
 
