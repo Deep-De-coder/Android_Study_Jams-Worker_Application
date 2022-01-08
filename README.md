@@ -28,4 +28,5 @@ This project “Worker’s Application” focuses on hiring process of the Worke
 The app is currently in the testing phase, You can access the app : <a href="https://github.com/Deep-De-coder/Android_Study_Jams-Worker_Application/blob/main/WorkersApplication-main/app/app-debug.apk" download="Woker Application.apk">Woker Application.apk</a> 
 <!--[YOUR APP LINK HERE](either Github link or Google Play store link of published app or .apk file)-->
 Warning : When you installed the the apk you have to enter the workers data manually, since app is still in testing mode.
+
 We are planning to make it available in workers native language also for better understanding. We aim that a every needy who needs services on urgent and have no way to found a worker would be helped with our application. We are also planning on addings reviews in our app regarding workers. 
