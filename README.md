@@ -25,7 +25,7 @@ This project “Worker’s Application” focuses on hiring process of the Worke
 
 <b> Application Link & Future Scope : </b>
 
-The app is currently in the testing phase, You can access the app : <a href="https://github.com/Deep-De-coder/Android_Study_Jams-Worker_Application/blob/main/WorkersApplication-main/app/app-debug.apk" download="Woker Application.apk">Woker Application.apk</a> 
+The app is currently in the testing phase, You can access the app : <a href="https://github.com/Deep-De-coder/Android_Study_Jams-Worker_Application/blob/main/WorkersApplication-main/app/app-debug.apk" download="Woker Application.apk">Woker Application.apk</a> (Clcik on raw or Download after clicking on this)
 <!--[YOUR APP LINK HERE](either Github link or Google Play store link of published app or .apk file)-->
 Warning : When you installed the the apk you have to enter the workers data manually, since app is still in testing mode.
 
