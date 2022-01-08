@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/workers"
+        android:title="Workers"
+        android:icon="@drawable/ic_baseline_people_24"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+    <item
+        android:id="@+id/complain"
+        android:title="Complain"
+        android:icon="@drawable/ic_baseline_comment_24"/>
+
+    <item android:title="Other">
+
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+
+            <item
+                android:id="@+id/aboutus"
+                android:title="About us"
+                android:icon="@drawable/ic_baseline_info_24"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Exit">
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_baseline_logout_24"/>
+
+
+        </menu>
+
+    </item>
+
+
+
+
+
+
+</menu>

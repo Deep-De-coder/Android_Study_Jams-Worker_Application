@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Workers Application</string>
+    <string name="quote1">"If your dreams don't scare you they are too small."</string>
+
+    <string-array name="work_experience">
+        <item>Experience 1</item>
+        <item>Experience 2</item>
+        <item>Experience 3</item>
+        <item>Experience 4</item>
+    </string-array>
+    <string-array name="work_price">
+        <item>Price 1</item>
+        <item>Price 2</item>
+        <item>Price 3</item>
+        <item>Price 4</item>
+    </string-array>
+
+
+    <string name="username_of_the_user">username of the user</string>
+    <string name="name_of_user">Name of User</string>
+    <string name="rs_15_000">Rs 15,000/-</string>
+    <string name="per_month">Per Month</string>
+    <string name="full_time">Full time</string>
+    <string name="_9am_7pm">(9am-7pm)</string>
+    <string name="address">Address</string>
+    <string name="_1251_w_university_ave_flagstaff_arkansas_86001_uk">1251 W University Ave, Manchester University, UK</string>
+    <string name="email_id">Email Id</string>
+    <string name="abc52_gmail_com">abc52@gmail.com</string>
+    <string name="contact_no">Contact No</string>
+    <string name="requirements">Requirements</string>
+    <string name="in_search_of_an_experienced_househelper_who_can_manage_baby_sitting_as_well_as_household_chores">In search of an experienced househelper who can manage baby sitting as well as household chores.Also who is available early morning , sometime at 8 am</string>
+    <string name="update">UPDATE</string>
+    <string name="_91_54875_25698">+91 54875 25698</string>
+
+
+    <string name="change_language">Change Language</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="change_language_text">Change the app display language</string>
+    <string name="delete_acc_text">Delete your account</string>
+    <string name="language_content_desc">Language</string>
+
+    <string name="Submit">Submit</string>
+    <string name="complain_title">Enter your complain here</string>
+    <string name="complain_text">I have a complain about this worker .................................................................................................................... blah blah blah</string>
+    <string name="name_of_worker_complain_title"> Enter worker\'s name </string>
+    <string name="name_of_worker_complain">John Doe</string>
+    <string name="worker_id_complain_title">Enter worker\'s id / username</string>
+    <string name="worker_id_complain">john.doe2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

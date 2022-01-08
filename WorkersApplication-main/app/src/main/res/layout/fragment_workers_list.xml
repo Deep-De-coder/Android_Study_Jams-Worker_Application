@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.list.WorkersListFragment">
+
+    <RelativeLayout
+
+        android:background="#ecedea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/workers_toolbar"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:text="Workers"/>
+
+            <ImageView
+                android:id="@+id/workers_menubtn"
+                android:layout_marginTop="17dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/menu4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                />
+            <ImageView
+                android:id="@+id/workers_search"
+                android:layout_marginTop="17dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/search_icon"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="15dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/workers_options"
+            android:padding="12dp"
+            android:layout_below="@id/workers_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/new_btn"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:fontFamily="@font/lato"
+                    android:textSize="15sp"
+                    android:background="@drawable/workers_category_btn_unselect"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textColor="@color/greytext"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/recommended_btn"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/workers_category_btn_unselect"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bookmark"
+                    android:textColor="@color/greytext"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/nearby_btn"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/workers_category_btn_unselect"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Near-by"
+                    android:textColor="@color/greytext"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/toprated_btn"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/workers_category_btn_unselect"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top rated"
+                    android:textColor="@color/greytext"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/workers_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/workers_options"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    tools:openDrawer="star"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/red_gradient_home_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="ABOUT US"
+                            android:textColor="#fff"
+                            android:textSize="22sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/home_menu_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="15dp"
+                            android:background="#00000000">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_baseline_menu_white" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@id/tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato"
+                        android:justificationMode="inter_word"
+                        android:text="Due to the sudden impact of Covid-19 many people lose there jobs and it's difficult to them to find job. Our team launch â€œWorkerâ€™s Applicationâ€ which will focuses on hiring process of the Workers in all services. It accepts all the details of the Worker by having a separate profile of a worker providing individuality. User who wants one can contact the worker through the profile for the further hiring process. This application uses databases for storing the data. It ensures that the data is safe.The applicationâ€™s extent is to make it available for everyone in the society who wants a worker and who wants to work and helping them to connect. "
+                        android:textColor="#fff"
+                        android:textSize="19sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/top"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/mid_home_background"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="TEAM"
+                        android:textColor="@color/homered"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:id="@+id/leader_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv3"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/leaders_img"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/home_round_btn_background"
+                            android:src="@drawable/lead_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+
+                                android:layout_marginBottom="3dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:gravity="center_vertical"
+                                android:text="Kartik Bodhankar"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/tv5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center_vertical"
+                                android:text="Team Leader"
+                                android:textColor="@color/homered"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/vampiro_one"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="@string/quote1"
+
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/leader_info"
+                        android:layout_margin="15dp"
+                        android:background="@color/greytext" />
+
+                    <LinearLayout
+                        android:id="@+id/co_leader_info1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/view1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+
+                                android:layout_marginBottom="3dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:gravity="center_vertical"
+                                android:text="Deep Shahane"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center_vertical"
+                                android:text="Team Co-Leader"
+                                android:textColor="@color/homered"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/vampiro_one"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="@string/quote1"
+
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="160dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="15dp"
+                                android:background="@drawable/home_round_btn_background"
+                                android:src="@drawable/colead_img" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/co_leader_info1"
+                        android:layout_margin="15dp"
+                        android:background="@color/greytext" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/view2"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/home_round_btn_background"
+                            android:src="@drawable/manag_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+
+                                android:layout_marginBottom="3dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:gravity="center_vertical"
+                                android:text="Nitee Dhuri"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center_vertical"
+                                android:text="Team Manager"
+                                android:textColor="@color/homered"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/vampiro_one"
+                                android:gravity="center_vertical"
+                                android:padding="8dp"
+                                android:text="@string/quote1"
+
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_margin="15dp"
+                        android:paddingBottom="80dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/home_round_btn_background"
+                                android:src="@drawable/dummy3" />
+
+                            <TextView
+                                android:id="@+id/tv6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img1"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:gravity="center_vertical"
+                                android:paddingStart="10dp"
+                                android:text="Micheal Cliff"
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_below="@id/tv6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:paddingStart="10dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center_vertical"
+                                android:text="Co-Leader"
+                                android:textColor="@color/homered"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/home_round_btn_background"
+                                android:src="@drawable/dummy2" />
+
+                            <TextView
+                                android:id="@+id/tv7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/img2"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:gravity="center_vertical"
+                                android:paddingStart="10dp"
+                                android:text="Stephnie Lough"
+                                android:textColor="#000"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:layout_below="@id/tv7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:paddingStart="10dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center_vertical"
+                                android:text="Manager"
+                                android:textColor="@color/homered"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>-->
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/red_gradient_home_background" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/feedback_btn_background"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="FEEDBACK"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="#FF6A6A"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+</androidx.drawerlayout.widget.DrawerLayout>

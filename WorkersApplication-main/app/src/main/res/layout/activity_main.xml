@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity"
+    tools:openDrawer="start"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_gradient_home_background"
+        android:paddingTop="0dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/top_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/home_profile_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/home_round_btn_background">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/user_profile_default"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/home_menu_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="#00000000">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_menu_white" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_profile_btn"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Hi User,"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="What service are you looking for?"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:background="@drawable/home_search_background"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@id/tv2"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginStart="12dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/siv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/search_icon"/>
+                <EditText
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/siv"
+                    android:background="#00000000"
+                    android:textSize="15sp"
+                    android:padding="12dp"
+                    android:hint="Search here"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_home"
+            android:background="@drawable/mid_home_background">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/tv3"
+                android:layout_marginTop="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#f07470"
+                />
+
+            <LinearLayout
+                android:id="@+id/option_tabs"
+                android:layout_marginTop="-8dp"
+                android:layout_below="@id/tv3"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@drawable/blue_gradient_home">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/floor_cleaner_clipart"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@drawable/green_gradient_home">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/laundry_clipart"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@drawable/yellow_gradient_home">
+                    <ImageView
+                        android:layout_marginEnd="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dusting_clipart"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/option_tabs_labels"
+                android:layout_marginTop="-32dp"
+                android:layout_below="@id/option_tabs"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Cleaner"
+                    android:textColor="#f07470"
+                    android:textSize="15sp" />
+                <TextView
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#f07470"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="Laundry"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#f07470"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="Dusting"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/orange_gradient_home_offer"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/option_tabs_labels"
+                android:id="@+id/offers"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Offers"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@id/offers"
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recomendations"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#f07470"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="#FF6A6A"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
